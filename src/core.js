@@ -58,7 +58,7 @@ export const joiner = ((data, separator = ',', enclosingCharacter = '"') => {
         .map(column => `${enclosingCharacter}${column}${enclosingCharacter}`)
         .join(separator)
     )
-    .join(`\n`);
+    .join(`\r\n`);
 });
 
 export const arrays2csv = ((data, headers, separator, enclosingCharacter) =>
